@@ -1,0 +1,90 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.bvmiste.vision16.Eventactivity.civil1"
+        android:layout_width="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="“RUN”"
+                android:textColor="@color/primary"
+                android:id="@+id/textView1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id2"
+            android:layout_below="@+id/id1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="
+Event Description:-
+
+It is treasure hunt with some technical flavours added.You will have to
+rush to all the corners of the college and will explore a lot during this event.Use your
+intellect and friendship bond and be the First one to finish.
+
+Round 1:It is treasure hunt with some technical flavours added, in which some basic
+technical tasks related to basic engineering, general knowledge and schoolings will help
+team to crack the 1st round.
+
+Round 2:All you have to do here is notice the things around you and try to finish the given task as
+early as possible. Enjoy at the fullest and hope for the best.
+Publicity description:"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/id2">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Event manager:
+Shrey Vaidya-8401605665"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/textView3" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

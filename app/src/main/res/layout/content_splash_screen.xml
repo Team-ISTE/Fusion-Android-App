@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_splash_screen" tools:context=".SplashScreen">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center_horizontal" tools:context=".SplashActivity">
+        <ImageView android:id="@+id/imgSplash0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:src="@drawable/bvm"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" tools:context=".SplashActivity"
+        android:layout_alignParentBottom="true"
+        android:weightSum="1">
+        <ImageView android:id="@+id/imgSplash" android:scaleType="fitXY" android:src="@drawable/logo3"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp" />
+    </LinearLayout>
+
+</RelativeLayout>

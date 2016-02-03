@@ -1,0 +1,87 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.bvmiste.vision16.Eventactivity.civil1"
+        android:layout_width="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Game of thrones"
+                android:textColor="@color/primary"
+                android:id="@+id/textView1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id2"
+            android:layout_below="@+id/id1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="
+Event Description:
+
+This event is especially for 2 and 3 rd year based on knowledge of digitalelectronics.
+
+Round 1: Quiz based on Digital Electronic and important concept.
+
+Round 2: Analogous to treasure hunts. In this round we will give one question to each team and from that they find the location. In that location they will get another clue and at last from there they will get final question.
+
+Round 3: In this final round finalist have to debug the Digital circuit. The circuit will be based on digital ICs and your knowledge of implementation.
+"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/id2">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Event manager: Bhatt Harsh
+Mobile no.: 8460678411"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/textView3" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

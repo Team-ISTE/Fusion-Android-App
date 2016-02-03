@@ -1,0 +1,92 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.bvmiste.vision16.Eventactivity.civil1"
+        android:layout_width="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Breaking Bad"
+                android:textColor="@color/primary"
+                android:id="@+id/textView1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id2"
+            android:layout_below="@+id/id1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="
+Event Description:
+Round 1: Head Storm
+
+It is a quiz based on C programming. Which contains questions like find the errors, Write the
+output, crossword etc.
+
+Round 2: Debate Ka Senate
+
+It is a Debate based on recent topics of IT field. After 1st round, participants will be divided
+into groups and debate will be held between them.
+
+Round 3:Logic Ka King
+
+In this round participants will be given set of Outputs and they are intended to write
+multiple logics of that output. They are not supposed to write program.
+"                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/id2">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Event Manager – Meet Shah
+Mobile no-8460737493"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/textView3" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

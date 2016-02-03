@@ -1,0 +1,101 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.bvmiste.vision16.Eventactivity.civil1"
+        android:layout_width="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Suits"
+                android:textColor="@color/primary"
+                android:id="@+id/textView1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id2"
+            android:layout_below="@+id/id1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="
+This event focuses on finding your own voice through the crowd.
+
+ROUND 1: A team of two would be going up for this quiz. Each team would be handed
+out with a list of clues regarding the places where they would have to go and clear the
+quiz. A small quiz of around 5 questions would be given to each team at every location.
+The questions asked would be regarding the previous location they visited. The first 10
+teams to clear their respective quiz and arrive at the final destination would be
+
+ROUND 2: A picture would be shown to all the 10 teams simultaneously and 5 min
+duration would be allotted. During this 5 min each team has to prepare a story board
+inspired from the picture which was shown before. After the allotted 5 min are over, the
+team members would be separated from each other. One team member would have to
+write down the story limiting themselves to a maximum of 150 words in 5 min. Then
+later the other team member would have to narrate and explain the team’s perception
+regarding the picture to a panel of jury. The best performing 4 teams would be allowed
+to advance to the final round.
+
+ROUND 3: The surviving 4 teams would be dismembered and would be sent to a panel
+of jury who would be judging each one individually on their viewpoints, personality,
+confidence and knowledge. A special twist is awaiting for the finalists that would be
+revealed on the spot.
+"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/id2">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="
+EVENT MANAGERS:
+Dhruvaj Suryvanshi and Enosh Vishwanathan
+PHONE NUMBERS: 8758864550; 9157730975"
+                android:textColor="@color/colorAccent"
+                android:id="@+id/textView3" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

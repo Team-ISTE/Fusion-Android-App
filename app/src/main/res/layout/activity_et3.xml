@@ -1,0 +1,92 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true">
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.bvmiste.vision16.Eventactivity.civil1"
+        android:layout_width="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="The Maze Runner"
+                android:textColor="@color/primary"
+                android:id="@+id/textView1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id2"
+            android:layout_below="@+id/id1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="
+Event Description:
+
+Round 1: - Preliminary quiz 
+
+The first round of the event is based on general quiz based on Basic Of electronics.
+Like analog, digital etc.
+
+Round 2: - Arduino Coding
+
+A problem statement would be asked on basic Arduino programming (like LED blink, display, serial communication etc.). They have to display the working Arduino code in Arduino IDE.
+
+Round 3: - Arduino Implementation
+
+In final round problem statement would be given and they have to write code and implement circuit on Proteus tool. Round 3 is almost on the base of practical application like LCD display, motor controlling, led controlling etc. So, the problem statement will be given on the spot and the participants will have to solve the problem(s) within the specified time limit."
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/textView2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/id2">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Event Manager:
+  Siddharaj Gogre : 7874536826
+  Aamir Mansuri : 8460370274 "
+                android:textColor="@color/colorAccent"
+                android:id="@+id/textView3" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

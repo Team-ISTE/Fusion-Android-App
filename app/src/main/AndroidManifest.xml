@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bvmiste.vision16" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!--
+       IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+       to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission
+        android:name="com.bvmiste.vision16.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.bvmiste.vision16.permission.C2D_MESSAGE" />
+
+    <application
+        android:name=".Iniatilzation"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="v9X7Sy1HzzfYPd47reHozOeZCQvC3NNpF5rrKEgn" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="V4lasxQC8kub9EfhYumLKNYV7mxD8bzxIqjfk5Qp" />
+        <meta-data
+            android:name="com.parse.push.notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Branch.Civilhouse"
+            android:label="@string/title_activity_civilhouse"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bvmiste.vision16.Dashboard" />
+        </activity>
+        <activity
+            android:name=".Branch.Codehouse"
+            android:label="@string/title_activity_codehouse"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bvmiste.vision16.Dashboard" />
+        </activity>
+        <activity
+            android:name=".Branch.ElectronHouse"
+            android:label="@string/title_activity_electron_house"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bvmiste.vision16.Dashboard" />
+        </activity>
+        <activity
+            android:name=".Branch.MachineHouse"
+            android:label="@string/title_activity_machine_house"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bvmiste.vision16.Dashboard" />
+        </activity>
+        <activity
+            android:name=".Feedback"
+            android:label="@string/title_activity_registration"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.bvmiste.vision16.Dashboard" />
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name=".MyPushReciever"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="com.bvmiste.vision16" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Branch.electrical"
+            android:label="@string/title_activity_electrical"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Branch.FirstYear"
+            android:label="@string/title_activity_first_year"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".Eventactivity.Code3" >
+        </activity>
+        <activity android:name=".Eventactivity.Code4" >
+        </activity>
+        <activity android:name=".Eventactivity.mech1" >
+        </activity>
+        <activity android:name=".Eventactivity.mech2" >
+        </activity>
+        <activity android:name=".Eventactivity.mech3" >
+        </activity>
+        <activity android:name=".Eventactivity.mech4" >
+        </activity>
+        <activity android:name=".Eventactivity.et1" >
+        </activity>
+        <activity android:name=".Eventactivity.et2" >
+        </activity>
+        <activity android:name=".Eventactivity.et3" >
+        </activity>
+        <activity android:name=".Eventactivity.et4" >
+        </activity>
+        <activity android:name=".Eventactivity.elc1" >
+        </activity>
+        <activity android:name=".Eventactivity.elc2" >
+        </activity>
+        <activity android:name=".Eventactivity.elc3" >
+        </activity>
+        <activity android:name=".Eventactivity.civil1" >
+        </activity>
+        <activity android:name=".Eventactivity.civil2" >
+        </activity>
+        <activity android:name=".Eventactivity.civil3" >
+        </activity>
+        <activity android:name=".Eventactivity.first1" >
+        </activity>
+        <activity android:name=".Eventactivity.first2" >
+        </activity>
+        <activity
+            android:name=".Notification"
+            android:label="@string/title_activity_notification"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".NotificationFeed"
+            android:label="@string/title_activity_notification_feed"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity android:name=".Eventactivity.code1" >
+        </activity>
+        <activity android:name=".Eventactivity.code2" >
+        </activity>
+        <activity
+            android:name=".TeamFusion"
+            android:label="@string/title_activity_team_fusion"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

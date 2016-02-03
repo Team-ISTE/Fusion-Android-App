@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Fusion16</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="parse_app_id">v9X7Sy1HzzfYPd47reHozOeZCQvC3NNpF5rrKEgn</string>
+    <string name="parse_client_key">V4lasxQC8kub9EfhYumLKNYV7mxD8bzxIqjfk5Qp</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_civilhouse">Civilhouse</string>
+    <string name="title_activity_codehouse">Codehouse</string>
+    <string name="title_activity_electron_house">ElectronHouse</string>
+    <string name="title_activity_machine_house">MachineHouse</string>
+    <string name="title_activity_registration">Feedback Please!</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_electrical">ElectricalHouse</string>
+    <string name="title_activity_first_year">FreshmenCorner</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_code2">Code2</string>
+    <string name="title_activity_code1">Code1</string>
+    <string name="title_activity_notification">Notification Registry</string>
+    <string name="title_activity_notification_feed">NotificationFeed Burner</string>
+    <string name="title_activity_team_fusion">TeamFusion</string>
+</resources>

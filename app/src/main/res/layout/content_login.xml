@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_login" tools:context="com.bvmiste.vision16.Login">
+
+    <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login1"
+        android:weightSum="1">
+        ImageView android:id="@+id/imgSplash"  android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:scaleType="fitXY" android:src=""
+            android:layout_weight="1.99" />
+    </LinearLayout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" A Warm Welcome by Team Fusion"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="50px"
+            android:textSize="50px"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login2"
+        android:id="@+id/login3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Please enter your enrollment no to Register"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="50px"
+            android:textSize="50px"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login3"
+        android:id="@+id/login4">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="6dp">
+            <EditText android:id="@+id/enrollmentno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="Enrollment No"
+                android:maxLength="12"
+                android:numeric="integer" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login4">
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:padding="12dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:text="Register"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <!-- Login Button -->
+
+
+
+</RelativeLayout>
